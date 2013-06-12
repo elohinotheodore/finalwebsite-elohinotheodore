@@ -1,0 +1,242 @@
+/* Reset All */
+html{color:#900;;width:100%;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/G2uphNnNqGFMHLRsO_72ngLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/Kom15zUm24dIPfIRiNogNuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+/* HTML Background */
+html {
+	/* H: 0% S: 0% B: 70% */
+	background-color: #28a8b4;
+}
+
+/* Body */
+body {
+	font-family: 'Lato', arial, serif;
+	
+	width: 100%;
+	
+	-webkit-animation: bugfix infinite 1s;
+}
+@-webkit-keyframes bugfix {
+	from { padding: 0; } to { padding: 0; }
+}
+
+.clear {
+	clear: both;
+}
+
+/* Content */
+#content {
+	/* H: 0% S: 0% B: 20% */
+	color: #900;
+	/* H: 0% S: 0% B: 90% 
+	text-shadow: 1px 1px 1px #e6e6e6;*/
+	
+	font-size: 1.25em;
+	
+	padding: 20px;
+	
+	width: 920px;
+}
+
+
+
+
+/* ---------- MENU ---------- */
+#menu {
+	padding: 10px;
+	
+	width: 920px;
+	height: 300px;
+}
+#menu p {
+	font-size: 42pt;
+	font-weight: 100;
+	
+	padding: 25px 10px;
+}
+#menu a {
+	font-size: 18pt;
+	text-shadow: 1px 1px 0px #cacaca;
+	
+	margin: 0 35px 75px 10px;
+	
+	/* CSS TRANSITION */
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+#menu a:link, #menu a:visited {
+	color: #25a1ed;
+}
+#menu a:hover, #menu a:focus {
+	color: #900;
+}
+/* Select all children of the menu */
+#menu > * {
+	margin: 0 5px 0 0;
+	
+	float: left;
+}
+
+
+
+
+
+/* Menu Buttons */
+/* HOME BUTTON */
+.homebutton {
+	padding: 5px;
+	width: 100px;
+	color: #900;
+}
+.homebutton:hover ~ #menuitemscontainer .menuitems {
+	position: relative;
+	top: 0px;
+	color: #900;
+}
+/* ABOUT BUTTON */
+.aboutbutton {
+	padding: 5px;
+	width: 100px;
+	color: #900;
+}
+.aboutbutton:hover ~ #menuitemscontainer .menuitems {
+	position: relative;
+	top: -217px;
+	
+}
+/* PORTFOLIO BUTTON */
+.portfoliobutton {
+	padding: 5px;
+	width: 140px;
+}
+.portfoliobutton:hover ~ #menuitemscontainer .menuitems {
+	position: relative;
+	top: -434px;
+}
+/* CONTACT BUTTON */
+.contactbutton {
+	padding: 5px;
+	width: 100px;
+}
+.contactbutton:hover ~ #menuitemscontainer .menuitems {
+	position: relative;
+	top: -651px;
+}
+
+
+
+
+
+/* Changing Menu Item */
+#menuitemscontainer {
+	border-bottom: solid 6px black;
+	
+	height: 95px;
+	
+	overflow: hidden;
+}
+#menuitemscontainer p {
+	font-weight: 900;
+}
+.menuitems {
+	position: relative;
+	top: 0px;
+	
+	text-align: center;
+	
+	margin: 0 0 100px 0;
+	
+	/* CSS TRANSITION */
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.menuitems:last-child {
+	margin: 0 0 0 0;
+}
+
+body {
+	background: url('../img/trailblazers_logo.jpg');
+}
+
+container_12 .push_1 {  
+    left: 40px;  
+}  
+
+.main {
+	margin-bottom: 30px;
+	padding: 10px;
+	border: 4px blue;
+}
+
+a {
+  background: 
+    url("http://dl.dropbox.com/u/9843666/ewu/368/resources/sprite-1.png") no-repeat;
+    
+    display: block;
+    height: 50px;
+    weight: 200px;
+}
+
+a:hover {
+  background-position: 0 -50px;
+    
+  -webkit-transition: all 1s;
+}
+
+img {
+  float: right;
+}
+
+clearfix after {
+  content: "Elohino"
+  clear: both;
+  display: block;
+  height: 8
+ Visibility: hidden;
+  
+}
+
+font-family: 'Average Sans', sans-serif; <font size="200">;
+
+.itried {font-size: 50px;}
+.css {font-size: 206px;letter-spacing: 5px;line-height: 1;}
+.itworked {
+font: italic 60px/0 "bistro-script-web-1","bistro-script-web-2", cursive;
+text-transform: lowercase;
+margin-bottom: 20px;
+margin-top:20px;
+}
